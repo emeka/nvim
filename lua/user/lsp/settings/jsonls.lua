@@ -187,8 +187,8 @@ local opts = {
     commands = {
       Format = {
         function()
---          vim.lsp.buf.range_formatting({tabstop=4, shiftwidth=4, softtabstop=4}, { 0, 0 }, { vim.fn.line "$", 0 })
-          vim.lsp.buf.range_formatting({tabSize=4, insertSpaces=true}, { 0, 0 }, { vim.fn.line "$", 0 })
+          --          vim.lsp.buf.range_formatting({tabstop=4, shiftwidth=4, softtabstop=4}, { 0, 0 }, { vim.fn.line "$", 0 })
+          vim.lsp.buf.range_formatting({ tabSize = 4, tabstop = 4, shiftwidth = 4, softtabstop = 4 }, { 0, 0 }, { vim.fn.line "$", 0 })
         end,
       },
     },
